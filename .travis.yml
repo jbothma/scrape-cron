@@ -2,8 +2,8 @@ language: ruby
 rvm:
 - 2.1.6
 script:
-- 'curl --http1.0 -v -u $SCRAPINGHUB_API_KEY: https://app.scrapinghub.com/api/run.json
-  -d project=79283 -d spider=gpw'
+- 'curl --fail --http1.0 -v -u $SCRAPINGHUB_API_KEY:
+  https://app.scrapinghub.com/api/run.json -d project=79283 -d spider=gpw'
 env:
   global:
     secure: JdYTg05iiXI0yIO2WqH48wNnXd9DT9JxlOvTpLgMlsk6w/TqiTni72NLgH2vbaHlGnFIUTixPwlK1nH65CG6KjoneA6+tHP+Iwx3D+7Uspii6tKQWEDfcLU9poL5U5K7qJLGPWp9V5wk6KBA4SyDIkpE2kR7hRIPvrjceEQ6fF2TOCsAVxb/Ndj6QonVyYbWm1dcJ+BTJmt+wEO0X93FJU7I4r1iw4i5tZJ+4j5tMY/U23hoMji36H4BVWsb/s1h39H7FmFOzbTmFi8OmQZA9UvmvZ9rKtkvOB+Sx1tlSZtmWxEyVsgGmvkhoV+1CgOfmtJV24EMHuRKsiSH3cJniJNNaBS1KlZL25vTfBmlOXONDq+5Ia7ujqwwn8yEMVfZ+40FuMs6xxpM+bC3Wg0/Vi2FAlhmO98VxLPRDF3tN2Yn9qTuFIPgVDTawv723LzBb2ArVCnGYdN8n5udkgI7BBD1Qu9Olityp/8gU+zRhc2JfU8OW/eNJANYwiMI8gYs3lVjQFY6Bt1+p6mV5SBXmWY++5wF2WSV+jjRGNApvUbz3UwUmJKc7xJUumIlee4EtSJeM8IsswoKw2mdLYy8tvC9h/Tm+cVwOPgkRKH6ca2fEuFYfCDMRrfefokykFhmLI7EkZW3dHQqu13rt4XPZNW51kKuEwmLm9XROzmNCJc=
