@@ -17,7 +17,7 @@ travis encrypt SCRAPINGHUB_API_KEY="the key" --add
 Spider list
 
 ```
-travis encrypt SCRAPINGHUB_SPIDERS="gpw western_cape" --add
+travis encrypt SCRAPINGHUB_SPIDER1="gpw" --add
 ```
 
 And it's probably good to delete the old ones from .travis.yml
